@@ -1,0 +1,5 @@
+{
+  "name":"roros-order-monitor","version":"1.0.0","private":true,
+  "dependencies":{"@capacitor/android":"^8.5.2","@capacitor/core":"^8.5.2"},
+  "devDependencies":{"@capacitor/cli":"^8.5.2"}
+}
