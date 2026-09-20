@@ -1,1 +1,12 @@
-{"appId":"com.roroscravings.ordermonitor","appName":"Roro's Order Monitor","webDir":"www","bundledWebRuntime":false}
+{
+  "appId": "com.roroscravings.digos",
+  "appName": "Roro's Order Monitor",
+  "webDir": "www",
+  "bundledWebRuntime": false,
+  "plugins": {
+    "FirebaseAuthentication": {
+      "skipNativeAuth": true,
+      "providers": ["google.com"]
+    }
+  }
+}
