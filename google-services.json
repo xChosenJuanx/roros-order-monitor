@@ -8,7 +8,7 @@
     {
       "client_info": {
         "mobilesdk_app_id": "1:846240897530:android:0d01511bf08148b9a7ec43",
-        "android_client_info": {"package_name": "com.roroscravings.digos"}
+        "android_client_info": {"package_name":"com.roroscravings.digos"}
       },
       "oauth_client": [
         {"client_id":"846240897530-lps80rqeg3a2hsuahkbn8i52soovmd7m.apps.googleusercontent.com","client_type":1,"android_info":{"package_name":"com.roroscravings.digos","certificate_hash":"25d90c5ecb0641ee45bb77ffcd01006e1639f645"}},
@@ -19,10 +19,13 @@
     },
     {
       "client_info": {
-        "mobilesdk_app_id": "1:846240897530:android:f3fc17f1b1242dbda7ec43",
-        "android_client_info": {"package_name": "com.roroscravings.ordermonitor"}
+        "mobilesdk_app_id":"1:846240897530:android:f3fc17f1b1242dbda7ec43",
+        "android_client_info":{"package_name":"com.roroscravings.ordermonitor"}
       },
-      "oauth_client":[{"client_id":"846240897530-8q2mco3mgpepstbg14vkj8m80c9otncn.apps.googleusercontent.com","client_type":3}],
+      "oauth_client":[
+        {"client_id":"846240897530-ncvio25uqqqr30bq66t1317jmnqi2uvn.apps.googleusercontent.com","client_type":1,"android_info":{"package_name":"com.roroscravings.ordermonitor","certificate_hash":"abcc9b3fc8aac2ceaf2a8cd88b62e3198e38f32a"}},
+        {"client_id":"846240897530-8q2mco3mgpepstbg14vkj8m80c9otncn.apps.googleusercontent.com","client_type":3}
+      ],
       "api_key":[{"current_key":"AIzaSyDQU2GczZ_3yarxDnuW1ibQ7oXejQQpW3s"}],
       "services":{"appinvite_service":{"other_platform_oauth_client":[{"client_id":"846240897530-8q2mco3mgpepstbg14vkj8m80c9otncn.apps.googleusercontent.com","client_type":3}]}}
     }
