@@ -1,5 +1,5 @@
 {
-  "appId": "com.roroscravings.digos",
+  "appId": "com.roroscravings.ordermonitor",
   "appName": "Roro's Order Monitor",
   "webDir": "www",
   "bundledWebRuntime": false,
