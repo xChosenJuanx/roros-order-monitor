@@ -25,6 +25,36 @@ jobs:
           distribution: temurin
           java-version: '21'
 
+      - name: Restore stable debug signing key
+        uses: actions/cache@v4
+        with:
+          path: ~/.android/debug.keystore
+          key: roros-order-monitor-debug-keystore-v1
+
+      - name: Create debug signing key if missing
+        run: |
+          mkdir -p ~/.android
+          if [ ! -f ~/.android/debug.keystore ]; then
+            keytool -genkeypair -v \
+              -keystore ~/.android/debug.keystore \
+              -storepass android \
+              -alias androiddebugkey \
+              -keypass android \
+              -keyalg RSA \
+              -keysize 2048 \
+              -validity 10000 \
+              -dname "CN=Android Debug,O=Android,C=US"
+          fi
+
+      - name: Show signing fingerprints
+        run: |
+          echo "=== ORDER MONITOR FIREBASE FINGERPRINTS ==="
+          keytool -list -v \
+            -keystore ~/.android/debug.keystore \
+            -alias androiddebugkey \
+            -storepass android \
+            -keypass android | grep -E "SHA1:|SHA256:"
+
       - name: Install dependencies
         run: npm install
 
@@ -36,11 +66,11 @@ jobs:
 
       - name: Add Android platform
         run: npx cap add android
-        
+
       - name: Configure Google Services
         run: |
           cp google-services.json android/app/google-services.json
-          
+
       - name: Sync Capacitor
         run: npx cap sync android
 
